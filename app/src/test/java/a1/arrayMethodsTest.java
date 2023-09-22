@@ -21,7 +21,7 @@ public class arrayMethodsTest {
     @Test public void testMean(){
         arrayMethods classUnderTest = new arrayMethods();
         float[] arr1 = {1.0f, 2.0f, 3.0f, 4.0f};
-        assertEquals(3.5f, classUnderTest.mean(arr1), 0.00001);
+        assertEquals(3.5f, classUnderTest.mean(arr1, 2, 4), 0.00001);
     }
 
     @Test public void testMin(){

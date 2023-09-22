@@ -49,9 +49,10 @@ public class ReadFile {
       i++;
 
     }
-    System.out.println("Annual mean temperature: " + arrayMethods.mean(temp)+ "degrees Celsius");
-    System.out.println("Minimum average daily temperature: " + arrayMethods.min(temp, 0, count-1) + "degrees Celsius");
-    System.out.println("Maximum average daily temperature: " + arrayMethods.max(temp, 0, count-1) + "degrees Celsius");
+    arrayMethods test = new arrayMethods();
+    System.out.println("Annual mean temperature: " + test.mean(temp)+ "degrees Celsius");
+    System.out.println("Minimum average daily temperature: " + test.min(temp, 0, count-1) + "degrees Celsius");
+    System.out.println("Maximum average daily temperature: " + test.max(temp, 0, count-1) + "degrees Celsius");
     }
 
   }

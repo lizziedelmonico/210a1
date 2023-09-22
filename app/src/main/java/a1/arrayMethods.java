@@ -25,10 +25,20 @@ public class arrayMethods {
     }
 
     /* Uses the sum method and divides by the amount of numbers in the array and returns the mean */
+    public static float mean(float[] arr, int lo, int hi){
+        float sum = 0f;
+        for (int i = lo; i < hi; i++){
+            sum += arr[i];
+        }
+        return sum / (hi-lo);
+    }
+
     public static float mean(float[] arr){
         float sum = 0f;
         for (int i = 0; i < arr.length; i++){
             sum += arr[i];
+        } if(arr.length == 0) {
+            return 0.0f;
         }
         return sum / arr.length;
     }
